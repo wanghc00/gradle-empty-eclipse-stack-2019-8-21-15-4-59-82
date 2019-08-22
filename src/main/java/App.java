@@ -8,5 +8,16 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        
+        Car myCar=new Car("v8", "四个轮子");
+        System.out.println(myCar.start());
+        
+        SportsCar mySportsCar = new SportsCar("v8", "四个轮子", "跑马灯");
+        System.out.println(mySportsCar.start());
+        System.out.println(mySportsCar.speedOn());
+        
+        Truk myTruck=new Truk("v8", "8个轮子", "车厢");
+        System.out.println(myTruck.start());
+        System.out.println(myTruck.load());
     }
 }
